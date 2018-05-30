@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="第九放映室"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="影视推送"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CmovieActivity"
+            android:label="国产电影"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FmovieActivity"
+            android:label="欧美电影"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CtvActivity"
+            android:label="国产电视剧" />
+        <activity
+            android:name=".CdmovieActivity"
+            android:label="动作片" />
+        <activity
+            android:name=".FdmovieActivity"
+            android:label="动作片" />
+        <activity
+            android:name=".CdtvActivity"
+            android:label="动作片" />
+        <activity android:name=".DetailActivity"></activity>
+    </application>
+
+</manifest>
